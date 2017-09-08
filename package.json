@@ -1,6 +1,6 @@
 {
   "name": "oas-raml-converter-model",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This package contains model for oas-raml-converter package.",
   "main": "lib/model/index.js",
   "files": [
