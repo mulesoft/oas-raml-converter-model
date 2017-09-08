@@ -1,3 +1,5 @@
+// @flow
+
 const Annotation = require('./annotation');
 const AnnotationType = require('./annotationType');
 const BaseUri = require('./baseUri');
