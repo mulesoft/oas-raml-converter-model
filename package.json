@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "babel src -d lib && flow-copy-source -v src lib",
-    "publish": "npm run build && npm publish",
+    "publish": "npm run build",
     "eslint": "./node_modules/.bin/eslint ./src index.js ./src",
     "flow": "flow",
     "babel-node": "babel-node",
