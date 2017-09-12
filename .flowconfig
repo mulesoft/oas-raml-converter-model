@@ -1,9 +1,0 @@
-[include]
-.*/src/model/.*
-
-[libs]
-
-[options]
-
-suppress_comment=\\(.\\|\n\\)*\\$ExpectError
-unsafe.enable_getters_and_setters=true
