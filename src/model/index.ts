@@ -1,238 +1,238 @@
 export class Annotation {
   name: string
   definition: Definition | any
-  annotations?: Annotation[]
+  annotations: undefined | Annotation[]
 }
 
 export class AnnotationType {
   name: string
-  displayName?: string
-  description?: string
-  allowedTargets?: string[]
+  displayName: undefined | string
+  description: undefined | string
+  allowedTargets: undefined | string[]
   definition: Definition
-  required?: boolean
+  required: undefined | boolean
 }
 
 export class BaseUri {
-  host?: string;
-  basePath?: string;
-  protocol?: string;
-  uri?: string;
-  annotations?: Annotation[];
+  host: undefined | string;
+  basePath: undefined | string;
+  protocol: undefined | string;
+  uri: undefined | string;
+  annotations: undefined | Annotation[];
 }
 
 export class Body {
-  mimeType?: string;
+  mimeType: undefined | string;
   name: string;
-  definition?: Definition;
-  description?: string;
-  required?: boolean;
-  hasParams?: boolean;
-  annotations?: Annotation[];
+  definition: undefined | Definition;
+  description: undefined | string;
+  required: undefined | boolean;
+  hasParams: undefined | boolean;
+  annotations: undefined | Annotation[];
 }
 
 export class Definition {
   name: string;
-  type?: string;
-  internalType?: string;
-  compositionType?: Definition[];
-  reference?: string;
-  fileReference?: string;
-  properties?: Definition[];
-  propsRequired?: string[];
-  required?: boolean;
-  format?: string;
-  description?: string;
-  _default?: any;
-  multipleOf?: number;
-  maximum?: number;
-  minimum?: number;
-  maxLength?: number;
-  minLength?: number;
-  pattern?: string;
-  maxItems?: number;
-  minItems?: number;
-  uniqueItems?: boolean;
-  maxProperties?: number;
-  minProperties?: number;
-  _enum?: string[];
-  items?: Definition;
-  itemsList?: Definition[];
-  additionalProperties?: (boolean|Definition);
-  discriminator?: string;
-  xml?: string;
-  example?: any;
-  definitions?: any;
-  annotations?: Annotation[];
+  type: undefined | string;
+  internalType: undefined | string;
+  compositionType: undefined | Definition[];
+  reference: undefined | string;
+  fileReference: undefined | string;
+  properties: undefined | Definition[];
+  propsRequired: undefined | string[];
+  required: undefined | boolean;
+  format: undefined | string;
+  description: undefined | string;
+  _default: undefined | any;
+  multipleOf: undefined | number;
+  maximum: undefined | number;
+  minimum: undefined | number;
+  maxLength: undefined | number;
+  minLength: undefined | number;
+  pattern: undefined | string;
+  maxItems: undefined | number;
+  minItems: undefined | number;
+  uniqueItems: undefined | boolean;
+  maxProperties: undefined | number;
+  minProperties: undefined | number;
+  _enum: undefined | string[];
+  items: undefined | Definition;
+  itemsList: undefined | Definition[];
+  additionalProperties: undefined | (boolean|Definition);
+  discriminator: undefined | string;
+  xml: undefined | string;
+  example: undefined | any;
+  definitions: undefined | any;
+  annotations: undefined | Annotation[];
 
-  jsonValue?: string;
-  fileTypes?: string;
-  discriminatorValue?: any;
-  facets?: any[]; //swagger extension
-  examples?: any;
-  schema?: Definition;
-  schemaPath?: string;
-  displayName?: string;
-  collectionFormat?: string;
-  allowEmptyValue?: boolean;
+  jsonValue: undefined | string;
+  fileTypes: undefined | string;
+  discriminatorValue: undefined | any;
+  facets: undefined | any[]; //swagger extension
+  examples: undefined | any;
+  schema: undefined | Definition;
+  schemaPath: undefined | string;
+  displayName: undefined | string;
+  collectionFormat: undefined | string;
+  allowEmptyValue: undefined | boolean;
 
-  allOf?: any[];
-  exclusiveMaximum?: boolean;
-  exclusiveMinimum?: boolean;
-  readOnly?: boolean;
-  externalDocs?: ExternalDocumentation;
-  title?: string;
-  invalidJsonExample?: boolean;
+  allOf: undefined | any[];
+  exclusiveMaximum: undefined | boolean;
+  exclusiveMinimum: undefined | boolean;
+  readOnly: undefined | boolean;
+  externalDocs: undefined | ExternalDocumentation;
+  title: undefined | string;
+  invalidJsonExample: undefined | boolean;
 }
 
 export class ExternalDocumentation {
-  url?: string;
-  description?: string;
-  annotations?: Annotation[];
+  url: undefined | string;
+  description: undefined | string;
+  annotations: undefined | Annotation[];
 }
 
 export class Header {
-  _in?: string;
+  _in: undefined | string;
   name: string;
-  definition?: Definition;
-  description?: string;
-  required?: boolean;
-  annotations?: Annotation[];
-  hasParams?: boolean;
-  displayName?: string;
-  reference?: string;
+  definition: undefined | Definition;
+  description: undefined | string;
+  required: undefined | boolean;
+  annotations: undefined | Annotation[];
+  hasParams: undefined | boolean;
+  displayName: undefined | string;
+  reference: undefined | string;
 }
 
 export class Info {
   title: string
-  description?: string
-  version?: (string | number)
-  termsOfService?: string
-  contact?: InfoData
-  license?: InfoData
-  annotations?: Annotation[]
+  description: undefined | string
+  version: undefined | (string | number)
+  termsOfService: undefined | string
+  contact: undefined | InfoData
+  license: undefined | InfoData
+  annotations: undefined | Annotation[]
 }
 
 export class InfoData {
-  name?: string
-  url?: string
-  email?: string
-  annotations?: Annotation[]
+  name: undefined | string
+  url: undefined | string
+  email: undefined | string
+  annotations: undefined | Annotation[]
 }
 
 export class Item {
   name: string
-  value?: any
+  value: undefined | any
 }
 
 export class MediaType {
   mimeTypes: string[] // consumes + produces
-  consumes?: string[]
-  produces?: string[]
+  consumes: undefined | string[]
+  produces: undefined | string[]
 }
 
 export class Method {
   method: string // get, put, post, delete, options, head, patch
-  description?: string
-  path?: string
-  parameters?: Parameter[] // query parameters
-  responses?: Response[]
-  name?: string // displayName / operationId
-  headers?: Header[]
-  bodies?: Body[]
-  formBodies?: Body[]
-  is?: Item[]
-  produces?: string[]
-  consumes?: string[]
-  annotations?: Annotation[]
-  securedBy?: SecurityRequirement[]
-  tags?: string[]
-  summary?: string
-  externalDocs?: ExternalDocumentation
-  protocols?: string[]
-  queryStrings?: Parameter[]
-  deprecated?: boolean
+  description: undefined | string
+  path: undefined | string
+  parameters: undefined | Parameter[] // query parameters
+  responses: undefined | Response[]
+  name: undefined | string // displayName / operationId
+  headers: undefined | Header[]
+  bodies: undefined | Body[]
+  formBodies: undefined | Body[]
+  is: undefined | Item[]
+  produces: undefined | string[]
+  consumes: undefined | string[]
+  annotations: undefined | Annotation[]
+  securedBy: undefined | SecurityRequirement[]
+  tags: undefined | string[]
+  summary: undefined | string
+  externalDocs: undefined | ExternalDocumentation
+  protocols: undefined | string[]
+  queryStrings: undefined | Parameter[]
+  deprecated: undefined | boolean
 }
 
 export class Parameter {
-  _in?: string
+  _in: undefined | string
   name: string
-  definition?: Definition
-  displayName?: string
-  description?: string
-  required?: boolean
-  hasParams?: boolean
-  reference?: string
-  annotations?: Annotation[]
+  definition: undefined | Definition
+  displayName: undefined | string
+  description: undefined | string
+  required: undefined | boolean
+  hasParams: undefined | boolean
+  reference: undefined | string
+  annotations: undefined | Annotation[]
 }
 
 export class Resource {
-  path?: string
-  relativePath?: string
-  description?: string
-  displayName?: string
-  is?: Item[]
-  parameters?: Parameter[]
-  baseUriParameters?: Parameter[]
-  resourceType?: Item[]
-  methods?: Method[]
-  securedBy?: SecurityRequirement[]
-  annotations?: Annotation[]
-  resources?: Resource[]
+  path: undefined | string
+  relativePath: undefined | string
+  description: undefined | string
+  displayName: undefined | string
+  is: undefined | Item[]
+  parameters: undefined | Parameter[]
+  baseUriParameters: undefined | Parameter[]
+  resourceType: undefined | Item[]
+  methods: undefined | Method[]
+  securedBy: undefined | SecurityRequirement[]
+  annotations: undefined | Annotation[]
+  resources: undefined | Resource[]
 }
 
 export class ResourceType {
   name: string
-  usage?: string
-  resource?: Resource
+  usage: undefined | string
+  resource: undefined | Resource
 }
 
 export class Response {
-  httpStatusCode?: string
-  name?: string
-  description?: string
-  headers?: Header[]
-  bodies?: Body[]
-  reference?: string
-  hasParams?: boolean
-  globalResponseDefinition?: string
-  annotations?: Annotation[]
+  httpStatusCode: undefined | string
+  name: undefined | string
+  description: undefined | string
+  headers: undefined | Header[]
+  bodies: undefined | Body[]
+  reference: undefined | string
+  hasParams: undefined | boolean
+  globalResponseDefinition: undefined | string
+  annotations: undefined | Annotation[]
 }
 
 export class Root {
   info: Info
-  protocols?: string[]
-  baseUri?: BaseUri
-  mediaType?: MediaType
-  securityDefinitions?: SecurityDefinition[]
-  resources?: Resource[]
-  types?: Definition[]
-  tags?: Tag[]
-  externalDocs?: ExternalDocumentation
-  documentation?: Item[]
-  baseUriParameters?: Parameter[]
-  resourceTypes?: ResourceType[]
-  traits?: Trait[]
-  annotationTypes?: AnnotationType[]
-  annotations?: Annotation[]
-  resourceAnnotations?: Resource
-  responses?: Response[]
+  protocols: undefined | string[]
+  baseUri: undefined | BaseUri
+  mediaType: undefined | MediaType
+  securityDefinitions: undefined | SecurityDefinition[]
+  resources: undefined | Resource[]
+  types: undefined | Definition[]
+  tags: undefined | Tag[]
+  externalDocs: undefined | ExternalDocumentation
+  documentation: undefined | Item[]
+  baseUriParameters: undefined | Parameter[]
+  resourceTypes: undefined | ResourceType[]
+  traits: undefined | Trait[]
+  annotationTypes: undefined | AnnotationType[]
+  annotations: undefined | Annotation[]
+  resourceAnnotations: undefined | Resource
+  responses: undefined | Response[]
 }
 
 export class SecurityDefinition {
   schemaName: string
   type: string // basic, apiKey, oauth2, oauth1, digest, x-other
-  description?: string
-  authorization?: string[] // implicit, password, application, accessCode
-  authorizationUrl?: string
-  tokenUrl?: string // tokenUrl - tokenCredentialsUri  - accessTokenUri
-  scopes?: SecurityScope[]
-  describedBy?: Method
-  requestTokenUri?: string
-  displayName?: string
-  signatures?: string[]
-  _in?: string
-  name?: string
+  description: undefined | string
+  authorization: undefined | string[] // implicit, password, application, accessCode
+  authorizationUrl: undefined | string
+  tokenUrl: undefined | string // tokenUrl - tokenCredentialsUri  - accessTokenUri
+  scopes: undefined | SecurityScope[]
+  describedBy: undefined | Method
+  requestTokenUri: undefined | string
+  displayName: undefined | string
+  signatures: undefined | string[]
+  _in: undefined | string
+  name: undefined | string
 }
 
 export class SecurityRequirement {
@@ -242,19 +242,19 @@ export class SecurityRequirement {
 
 export class SecurityScope {
   value: string
-  description?: string
+  description: undefined | string
 }
 
 export class Tag {
   name: string
-  description?: string
-  externalDocs?: ExternalDocumentation
+  description: undefined | string
+  externalDocs: undefined | ExternalDocumentation
 }
 
 export class Trait {
   name: string
-  usage?: string
-  method?: Method
+  usage: undefined | string
+  method: undefined | Method
 }
 
 export default {
