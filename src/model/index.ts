@@ -83,6 +83,10 @@ export class Definition {
   externalDocs: undefined | ExternalDocumentation;
   title: undefined | string;
   invalidJsonExample: undefined | boolean;
+
+  error: undefined | any
+  warning: undefined |  any
+
 }
 
 export class ExternalDocumentation {
@@ -179,6 +183,9 @@ export class Resource {
   securedBy: undefined | SecurityRequirement[]
   annotations: undefined | Annotation[]
   resources: undefined | Resource[]
+
+  error: undefined | any
+  warning: undefined | any
 }
 
 export class ResourceType {
@@ -217,6 +224,9 @@ export class Root {
   annotations: undefined | Annotation[]
   resourceAnnotations: undefined | Resource
   responses: undefined | Response[]
+
+  error: undefined | any
+  warning: undefined | any
 }
 
 export class SecurityDefinition {
