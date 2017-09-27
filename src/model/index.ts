@@ -150,6 +150,9 @@ export class InfoData {
 export class Item {
   name: string
   value: undefined | any
+
+  error: undefined | any
+  warning: undefined | any
 }
 
 export class MediaType {
