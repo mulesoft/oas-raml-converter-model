@@ -80,7 +80,7 @@ export class Definition {
   annotations: undefined | Annotation[];
 
   jsonValue: undefined | string;
-  fileTypes: undefined | string;
+  fileTypes: undefined | string[];
   discriminatorValue: undefined | any;
   facets: undefined | any[]; //swagger extension
   examples: undefined | any;
