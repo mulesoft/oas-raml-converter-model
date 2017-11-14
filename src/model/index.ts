@@ -103,6 +103,8 @@ export class Definition {
   error: undefined | any
   warning: undefined | any
 
+  expanded: undefined | boolean
+
 }
 
 export class ExternalDocumentation {
