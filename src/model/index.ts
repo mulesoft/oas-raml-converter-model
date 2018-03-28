@@ -267,6 +267,8 @@ export class Root {
   mediaType: undefined | MediaType
   @Type(() => SecurityDefinition)
   securityDefinitions: undefined | SecurityDefinition[]
+  @Type(() => SecurityRequirement)
+  securedBy: undefined | SecurityRequirement[]
   @Type(() => Resource)
   resources: undefined | Resource[]
   @Type(() => Definition)
