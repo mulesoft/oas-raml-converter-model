@@ -27,7 +27,7 @@
     "serializer.ts": "0.0.12"
   },
   "devDependencies": {
-    "flowgen": "1.2.0",
+    "flowgen": "1.2.1",
     "typescript": "2.5.2"
   }
 }
